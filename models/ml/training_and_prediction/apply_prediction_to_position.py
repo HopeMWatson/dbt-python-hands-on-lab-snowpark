@@ -83,7 +83,7 @@ def model(dbt, session):
         ],
         materialized="table",
         tags="predict",
-        use_anonymous_sproc=True,
+        use_anonymous_sproc=True
     )
     session._use_scoped_temp_objects = False
     download_models_and_libs_from_stage(session)
